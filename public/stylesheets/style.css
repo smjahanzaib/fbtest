@@ -300,3 +300,20 @@ h1 {
 	padding-top: 15px;
 }
 
+@media only screen and (max-width: 950px)  {
+	.mobile-view{
+		display: block;
+	}
+	.web-view{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 950px)  {
+	.mobile-view{
+		display: none;
+	}
+	.web-view{
+		display: block;
+	}
+}
