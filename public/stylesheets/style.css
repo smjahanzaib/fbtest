@@ -2,13 +2,14 @@ body {
 	margin: 0;
 	font-family: 'Lucida Grande', tahoma,verdana,arial,sans-serif;
 	line-height: 1.28;
+	background-color: #edf0f5;
 }
 
 #navwrapper {
 	width: 100%;
 	height: 82px;
 	background-color: #3b5998;
-}
+} 
 
 #navbar {
 	margin: 0 auto;
@@ -300,7 +301,16 @@ h1 {
 	padding-top: 15px;
 }
 
-@media only screen and (max-width: 950px)  {
+.mobile-view{
+	display: none;
+}
+.web-view{
+	display: block;
+}
+
+/*///////////////////////*/
+
+@media only screen and (max-width: 1050px){
 	.mobile-view{
 		display: block;
 	}
@@ -309,11 +319,24 @@ h1 {
 	}
 }
 
-@media only screen and (min-width: 950px)  {
+@media only screen and (max-height: 500px){
 	.mobile-view{
-		display: none;
-	}
-	.web-view{
 		display: block;
 	}
+	.web-view{
+		display: none;
+	}
 }
+
+
+/*///////////////////////*/
+
+/*@media only screen and (min-width: 1051px){*/
+	/*.mobile-view{*/
+		/*display: none;*/
+	/*}*/
+	/*.web-view{*/
+		/*display: block;*/
+	/*}*/
+/*}*/
+
